@@ -1,0 +1,84 @@
+/* ===== Skip link styling ===== */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: yellow;
+    padding: 5px;
+    z-index: 1000;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+}
+
+/* ===== Header / Nav ===== */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%; /* only images inside nav */
+}
+
+nav ul {
+    list-style: none; /* comment out original li styling if any */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* ===== Grid Section ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%; /* two columns */
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 15px;
+}
+
+.grid img {
+    width: 100%; /* only images in grid */
+}
+
+/* ===== Flex Section ===== */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex div {
+    margin: 10px;
+}
+
+.flex img {
+    width: 150px; /* optional fixed width for flex images */
+}
+
+/* ===== General Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
